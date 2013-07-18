@@ -25,8 +25,6 @@ def gethostname(x, y):
 	        output_file.write(i + ' ' + str(err) + '\n')
 	        continue	
 
-
-
 def main():
 	''' gets input and output file and passes them to the 
 	function that will resolve the ip address'''
@@ -35,7 +33,7 @@ def main():
 	output_file = open(sys.argv[2], 'a')
 	gethostname(input_file, output_file)
 	output_file.close()
-
+	print('Process complete!')
 
 if __name__ == "__main__":
 	main()
